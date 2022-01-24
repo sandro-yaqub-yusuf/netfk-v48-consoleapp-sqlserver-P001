@@ -11,7 +11,7 @@
 
 ## Descrição:
 
-Pequeno projeto em DotNet Framework v4.8 (C# com Console Application) para demonstrar o uso com Dapper Plus e BD SQL-Server (Local) para inserir grandes quantidades de dados através do recurso BULK INSERT.
+Pequeno projeto em DotNet Framework v4.8 (C# com Console Application) para demonstrar o uso com Z-Dapper-Plus e BD SQL-Server (Local) para inserir grandes quantidades de dados através do recurso BULK INSERT.
 
 ----
 
@@ -28,3 +28,4 @@ Pequeno projeto em DotNet Framework v4.8 (C# com Console Application) para demon
 ## Sobre o Autor:
 
 SANDRO YAQUB YUSUF - Analista & Programador Sênior FULL-STACK - Trabalha com desenvolvimento de softwares desde 1990, passando pelas linguagens COBOL, CLIPPER, VISUAL BASIC 6, ASP Clássico, ASP.NET Framework, ASP.NET Core, PHP (Laravel) e NodeJS. Possui conhecimentos em banco de dados como SQL-SERVER, ORACLE, MySQL, MariaDB, MongoDB e SQLite. Também possui conhecimentos em HTML5, CSS3, TYPESCRIPT e JAVASCRIPT. Para as frameworks de desenvolvimento de FRONT-END, possui conhecimentos em ANGULAR, VUEJS e REACT JS. Pratica o modelo CLEAN ARCHITECTURE usando os conhecimentos em DDD, SOLID e TDD.
+
