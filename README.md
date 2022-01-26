@@ -2,7 +2,7 @@
 
 * Linguagem principal: C# (CSharp)
 * Frameworks utilizadas: netframework versão 4.8
-* Pacotes extras utilizadas: Dapper e Z.Dapper.Plus
+* Pacotes extras utilizadas: Dapper e Z_Dapper_Plus
 * Banco de Dados utilizado: SQL-Server (Local)
 * Editor utilizado: Visual Studio 2019
 * Informações extras: Necessita conhecimentos médios de C#
@@ -11,7 +11,7 @@
 
 ## Descrição:
 
-Pequeno projeto em DotNet Framework v4.8 (C# com Console Application) para demonstrar o uso com Z-Dapper-Plus e BD SQL-Server (Local) para inserir grandes quantidades de dados através do recurso BULK INSERT.
+Pequeno projeto em DotNet Framework v4.8 (C# com Console Application) para demonstrar o uso com Z_Dapper_Plus e BD SQL-Server (Local) para inserir grandes quantidades de dados através do recurso BULK INSERT.
 
 ----
 

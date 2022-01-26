@@ -20,7 +20,9 @@ namespace KITAB.Dapper.BulkInsert.ConsoleApp
 
         public static void Main(string[] args)
         {
-            StepMapping();
+			Console.WriteLine("Início - Processamento dos Holerites...\n\n");
+
+			StepMapping();
 
             StepFileReader();
 
@@ -28,7 +30,7 @@ namespace KITAB.Dapper.BulkInsert.ConsoleApp
 
 			StepBulkInsert();
 
-			Console.WriteLine("Arquivo processado...\n\n");
+			Console.WriteLine("Fim - Processamento dos Holerites...\n\n");
 			Console.ReadLine();
 		}
 
@@ -70,10 +72,10 @@ namespace KITAB.Dapper.BulkInsert.ConsoleApp
 							switch (linha.Substring(13, 1))
 							{
 								case "A":
-									holerite.cnpj = cnpj;
+									holerite.cnpj = cnpj.Trim();
 									holerite.tipo = tipoArquivo;
-									holerite.cpf = linha.Substring(206, 11);
-									holerite.funcionario = linha.Substring(43, 30);
+									holerite.cpf = linha.Substring(206, 11).Trim();
+									holerite.funcionario = linha.Substring(43, 30).Trim();
 									holerite.cod_banco = Convert.ToInt32(linha.Substring(20, 3));
 									holerite.agencia = Convert.ToInt32(linha.Substring(24, 5));
 									holerite.conta_corrente = Convert.ToInt32(linha.Substring(35, 6));
@@ -85,10 +87,10 @@ namespace KITAB.Dapper.BulkInsert.ConsoleApp
 									break;
 
 								case "D":
-									holerite.id_tel = linha.Substring(38, 15);
-									holerite.centro_custo = linha.Substring(23, 15);
+									holerite.id_tel = linha.Substring(38, 15).Trim();
+									holerite.centro_custo = linha.Substring(23, 15).Trim();
 									holerite.salario_contribuicao_inss = (Convert.ToDouble(linha.Substring(105, 15)) / 100);
-									holerite.cargo = linha.Substring(53, 30);
+									holerite.cargo = linha.Substring(53, 30).Trim();
 									holerite.depir = Convert.ToInt32(linha.Substring(99, 2));
 									holerite.depsf = Convert.ToInt32(linha.Substring(101, 2));
 
@@ -131,7 +133,7 @@ namespace KITAB.Dapper.BulkInsert.ConsoleApp
                                     {
 										verba = new Verba();
 										verba.codverba = codigoDaVerba;
-										verba.descricao_verba = linha.Substring(18, 30);
+										verba.descricao_verba = linha.Substring(18, 30).Trim();
 										verba.valor = (Convert.ToDouble(linha.Substring(53, 15)) / 100);
 										verbas.Add(verba);
 									}
@@ -140,7 +142,7 @@ namespace KITAB.Dapper.BulkInsert.ConsoleApp
 									{
 										verba = new Verba();
 										verba.codverba = codigoDaVerba;
-										verba.descricao_verba = linha.Substring(68, 30);
+										verba.descricao_verba = linha.Substring(68, 30).Trim();
 										verba.valor = (Convert.ToDouble(linha.Substring(103, 15)) / 100);
 										verbas.Add(verba);
 									}
@@ -149,7 +151,7 @@ namespace KITAB.Dapper.BulkInsert.ConsoleApp
 									{
 										verba = new Verba();
 										verba.codverba = codigoDaVerba;
-										verba.descricao_verba = linha.Substring(118, 30);
+										verba.descricao_verba = linha.Substring(118, 30).Trim();
 										verba.valor = (Convert.ToDouble(linha.Substring(153, 15)) / 100);
 										verbas.Add(verba);
 									}
@@ -158,7 +160,7 @@ namespace KITAB.Dapper.BulkInsert.ConsoleApp
 									{
 										verba = new Verba();
 										verba.codverba = codigoDaVerba;
-										verba.descricao_verba = linha.Substring(168, 30);
+										verba.descricao_verba = linha.Substring(168, 30).Trim();
 										verba.valor = (Convert.ToDouble(linha.Substring(203, 15)) / 100);
 										verbas.Add(verba);
 									}
